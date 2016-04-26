@@ -9,9 +9,10 @@
 #afplay_tools
 
 ##afplay_folder.py
-`python afplay_folder.py [folder]`
+`python afplay_folder.py -s/--shuffle [folder]`
 
 - sequentially playas all songs in a folder
+- shuffle by passing in `-s` or `--shuffle`
 - skip song with `ctl + c`
 
 ##afplay_kill.py
@@ -31,5 +32,5 @@
 `python afplay_spectrym.py [from speed] [to speed] [steps] [song]`
 
 - plays the song at multiple speeds at once
-- waring, if you go above 10 steps you might loose control of volume
+- waring, if you go over 10 steps you might loose control of volume
 - remember to use `afplay_kill.py` to kill playback
