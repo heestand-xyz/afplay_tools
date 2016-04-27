@@ -34,7 +34,7 @@ else:
 	
 	# play songs
 	for i, song in enumerate(songs):
-		print(':: #' + str(i + 1), '::', song, '::')
+		print(':: #' + str(i + 1).zfill(2), '::', song, '::')
 		song_path = os.path.join(folder, song)
 		os.system('afplay "' + song_path + '"')
 
